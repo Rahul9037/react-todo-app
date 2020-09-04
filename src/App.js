@@ -38,9 +38,11 @@ function App() {
 
 
   return (
-    <div className="App">
-      <h1>Hii React!!!</h1>
-      <form>
+    <div className="app">
+      <div className="app__header">
+      <h1><strong>React Todo App</strong></h1>
+      </div>
+      <form className="app__form">
         <FormControl>
           <InputLabel><span role="img" aria-label="">&#9989;</span> Write a Todo</InputLabel>
           <Input type="text" value={input} onChange={(e) => (setInput(e.target.value))} />

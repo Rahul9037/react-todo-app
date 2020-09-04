@@ -1,6 +1,19 @@
 .todo__list{
-    text-align: center;
-    background-color: blue;
     display: flex;
     align-items: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 20px;
+}
+.todo__icons{
+    display: flex;
+    width:70px;
+    justify-content: space-between;
+}
+.MuiSvgIcon-root{
+    cursor: pointer;
+}
+.todo__modal{
+    display:'flex';
+    align-items:'center';
 }
