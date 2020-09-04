@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     width: 400,
+    height :200,
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
@@ -39,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "strech",
+    justifyContent:"space-between"
   },
 }));
 
@@ -66,7 +68,7 @@ function Todo({ todo }) {
         className="todo__modal"
       >
         <form className={classes.paper} style={modalStyle}>
-          <h2>Edit Todo Item</h2>
+          <h2 style={{textAlign: "center"}}>Edit Todo Item</h2>
           <TextField
             disabled
             id="standard-disabled"
